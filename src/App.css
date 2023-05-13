@@ -1,0 +1,613 @@
+/* Login Page Css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.LoginPageMainDiv {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.LoginPageCenterDiv {
+  width: 400px;
+  display: block;
+  position: absolute;
+  padding: 25px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.LoginPageCenterDiv .HdingFrm {
+  margin-bottom: 20px;
+}
+
+.LoginPageCenterDiv .HdingFrm h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.FrmDtaShow {
+  width: 100%;
+  position: relative;
+}
+
+.inputEmail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.inputEmail input {
+  padding: 10px;
+  width: 305px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.BtnData {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.BtnData button {
+  width: 320px;
+  display: block;
+  position: relative;
+  background-color: #2fa9f4;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+}
+
+input:focus-visible {
+  outline: 0px;
+}
+
+.errormsg {
+  font-size: 12px;
+  color: red;
+}
+.inputEmail label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 324px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inputEmail label span {
+  color: #2fa9f4;
+}
+
+/* Top Header */
+
+.TopHderShow {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+  border-bottom: 2px solid #2fa9f4;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.mainDiv {
+  background-color: #d7d7d7;
+  position: relative;
+}
+
+.colum-6.CenterDta {
+  width: 50%;
+  background: #fff;
+  height: 93%;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.colum-6.rightDta {
+  width: 50%;
+  height: 93%;
+  position: relative;
+  border-radius: 5px;
+}
+
+.LftSide {
+  padding-left: 55px;
+}
+
+.rghtSide {
+  padding-right: 40px;
+}
+
+.LftSide .LogoLft {
+  width: 45px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.LftSide .LogoLft a {
+  display: inline-block;
+}
+
+.LftSide .LogoLft img {
+  width: 100%;
+}
+
+.LftSide {
+  display: flex;
+  align-items: center;
+}
+
+.rghtSide .ImgRgt {
+  width: 45px;
+  line-height: 0;
+  margin-top: -5px;
+}
+
+.rghtSide .ImgRgt img {
+  width: 100%;
+}
+
+.RgtNavShow {
+  padding-left: 20px;
+  margin-bottom: -12px;
+}
+
+.RgtNavShow ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.RgtNavShow ul li {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+}
+
+.RgtNavShow ul li::before {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  content: ">";
+  font-size: 14px;
+  color: #a1a0a0;
+}
+
+.RgtNavShow ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #a1a0a0;
+}
+
+.SrchBer {
+  position: relative;
+  display: flex;
+}
+
+.RgtNavShow ul li.ActiveNav::before {
+  content: none;
+}
+
+.RgtNavShow ul li.ActiveNav a {
+  color: #625f5f;
+  font-weight: 600;
+}
+
+.SrchBer input {
+  width: 180px;
+  border: 1px solid #2fa9f4;
+  padding: 6px 15px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.SrchBer button {
+  padding: 5px 12px;
+  background-color: #2fa9f4;
+  border: none;
+  border-radius: 5px;
+  margin-left: -4px;
+}
+
+.SrchBer button svg {
+  color: #fff;
+  font-size: 24px;
+}
+
+.pdingDta {
+  padding: 10px;
+  height: 86vh;
+  padding-top: 80px;
+  display: flex;
+  /* width: 100%; */
+  position: relative;
+  justify-content: space-between;
+}
+
+.colum-3.leftSideBr {
+  width: 19%;
+  height: 93%;
+  background: #fff;
+  border: 2px solid #2fa9f4;
+  margin-right: 10px;
+  overflow: auto;
+}
+
+.colum-3.leftSideBr::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.colum-3.leftSideBr::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+.colum-3.leftSideBr::-webkit-scrollbar-thumb {
+  background: #2fa9f4;
+}
+
+.NavigtionDta ul li.HdingSh.ActiveShow {
+  color: #2fa9f4;
+}
+
+.NavigtionDta ul li.HdingSh .PdingDta {
+  display: none;
+}
+
+.NavigtionDta ul li.HdingSh ul.PdingDta.activeNavshow {
+  display: block;
+  padding-top: 5px;
+  /* border-top: 1px solid #2fa9f4; */
+}
+
+.NavigtionDta ul li.HdingSh ul.PdingDta.activeNavshow::before {
+  top: -1px;
+  left: -41px;
+  width: 135%;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #2fa9f4;
+}
+
+/* Footer */
+
+.FTrBckGrd {
+  width: 100%;
+  background-color: #fff;
+  bottom: 0px;
+  left: 0px;
+  padding: 12px 10px;
+  text-align: center;
+  position: fixed;
+  border-top: 2px solid #2fa9f4;
+}
+
+.FTrBckGrd p {
+  margin: 0px;
+  color: #2fa9f4;
+  font-weight: 500;
+  font-size: 14px;
+}
+.RgtCl12 {
+  position: relative;
+  height: 100%;
+}
+
+.RgtCl12 .FirtSec {
+  width: 100%;
+  height: 48.9%;
+  background-color: #f4f0ef;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.RgtCl12 .FirtSec h3 {
+  margin: 0px;
+  padding: 14px 25px;
+  background-color: #fff;
+  color: #2fa9f4;
+  font-weight: 700;
+  font-size: 22px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.RgtCl12 .SecDta {
+  width: 100%;
+  height: 48.8%;
+  background-color: #f4f0ef;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.RgtCl12 .SecDta h3 {
+  margin: 0px;
+  padding: 14px 25px;
+  background-color: #fff;
+  color: #2fa9f4;
+  font-weight: 700;
+  font-size: 22px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.TaskMageDta {
+  background-color: #f4f0ef;
+  padding: 10px;
+  height: 100%;
+}
+.cl12TopHding {
+  position: relative;
+  display: block;
+}
+
+.cl12TopHding h5 {
+  margin: 0px;
+  padding: 20px 25px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #2fa9f4;
+}
+
+.TabingDtaShow {
+  position: relative;
+  /* width: 100%; */
+  margin-top: 10px;
+  padding: 0px 45px;
+}
+
+.TabingDtaShow ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TabingDtaShow ul li {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  padding: 5px 0px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #565555;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.TaskDetails {
+  display: none;
+  height: 100%;
+}
+
+.TaskDetails.active-content {
+  display: block;
+}
+
+.TabingDtaShow ul li.tabingClas.ActveTabing {
+  color: #2fa9f4;
+  border-bottom: 2px solid #2fa9f4;
+}
+
+.LftBtnRghtbtnLeft {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+.LftBtnRghtbtn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 4px;
+  top: 6px;
+}
+
+.DateOne,
+.DateTwo {
+  height: 48%;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.DateTwo {
+  height: 27%;
+}
+
+.DateOne p {
+  margin: 0px;
+}
+
+/* Left Sidebar */
+
+.PdlingLft {
+  padding: 0px 10px;
+}
+
+.UseName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  padding-top: 25px;
+}
+
+.UseName .icon svg {
+  font-size: 35px;
+  color: #656565;
+  font-weight: 600;
+}
+
+.UsrnameTxt {
+  font-weight: 700;
+  font-size: 22px;
+  color: #656565;
+}
+
+.NotifictionHeding {
+  position: relative;
+  display: flex;
+  padding: 0px 23px;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #2fa9f4;
+  padding-left: 0px;
+  margin-left: 14px;
+}
+
+.NotifictionHeding h4 {
+  margin: 0px;
+  font-size: 18px;
+  color: #2fa9f4;
+  font-weight: 700;
+}
+
+.NotifictionHeding .icon svg {
+  font-size: 28px;
+  color: #2fa9f4;
+  font-weight: 600;
+}
+
+.NotifictionHeding .icon {
+  position: relative;
+}
+.NotifictionHeding .icon small {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  color: #fff;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  top: 0px;
+  right: 0;
+}
+
+.NotificontContent {
+  padding: 0px;
+  position: relative;
+  display: flex;
+  padding: 0px 0px;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  padding-left: 0px;
+  margin-left: 14px;
+}
+
+.NotificontContent ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.NotificontContent ul li {
+  position: relative;
+  padding-left: 41px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.NotificontContent ul li .iconCnt {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  color: #2fa9f4;
+}
+
+.NotificontContent ul li small {
+  display: block;
+  margin-top: 2px;
+  color: #2fa9f4;
+}
+
+.NavigtionDta ul {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.NavigtionDta {
+  padding: 0px 15px;
+}
+
+.NavigtionDta ul li.HdingSh {
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #838383;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.NavigtionDta ul li.HdingSh .PdingDta {
+  margin-top: 5px;
+  position: relative;
+}
+
+.NavigtionDta ul li.HdingSh .PdingDta li {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.NavigtionDta ul li .icon {
+  position: absolute;
+  font-size: 20px;
+  left: 0px;
+  top: 3px;
+}
+
+.topOrdr {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 5px;
+}
